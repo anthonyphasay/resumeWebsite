@@ -23,7 +23,7 @@ const greeting = {
   username: "Tony Phasay",
   title: "Hello world, I am Tony!",
   subTitle: emoji(
-    "I'm a Computer Science student at Brigham Young University with an emphasis in Software Engineering. I currently work as a DevOps Technician at FPS GOLD, managing over 100+ servers, implementing CI/CD pipelines, troubleshooting production issues, and deploying hotfixes."
+    "I'm a Computer Science student at Brigham Young University with an emphasis in Software Engineering. I am currently working as a DevOps Technician at FPS GOLD, managing over 100+ servers, implementing CI/CD pipelines, troubleshooting production issues, and deploying hotfixes."
   ),
   resumeLink:
     "https://docs.google.com/document/d/152qmYANTWKW-iF0iFVJ6Srmrm1ZA3lb-GmmWYU7_Bvk/edit?usp=sharing", // Set to empty to hide the button. this link doesn't need to be replaced to get your resume in the site. Follow the README instructions for that.
@@ -52,11 +52,11 @@ const skillsSection = {
   subTitle: "DEDICATED FULL-STACK ENGINEER WHO LOVES TO LEARN",
   skills: [
     emoji(
-      "⚡ Develop highly interactive user interfaces for web applications"
+      "⚡ Develop highly interactive user interfaces for web and mobile applications"
     ),
-    emoji("⚡ Write hundreds of unit tests in Java and TypeScript to catch edge cases"),
+    emoji("⚡ Competent in technical operations and production troubleshooting"),
     emoji(
-      "⚡ Lead teams of 2-6 programmers to deliver 6+ projects on time"
+      "⚡ Experience with CI/CD, Infrastructure as Code, Powershell/Bash scripting"
     )
   ],
 
@@ -181,10 +181,11 @@ const customWorkExperience ={
       company: "FPS GOLD",
       companylogo: require("./assets/images/fpsgold.jpeg"),
       date: "May 2024 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Performed production code releases. Troubleshoot Production, Beta, QA downtimes. System Admin for over 150+ VMs. Database Administrator for Core Databases. Kubernetes Administrator.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Create Powershell automation for server maintenance",
+        "Set up developer's environment for QA or Beta testing",
+        "Create/maintain core databases for core FPS products"
       ]
     }]
 }
@@ -208,7 +209,7 @@ const workExperiences = {
       company: "DHI Computing Services, Inc",
       companylogo: require("./assets/images/dhi.jpeg"),
       date: "Feb 2020 – Jan 2023",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Monitor afterhour nightly processing. Troubleshoot client issues during critical processing hours. Contacted Tier 2-3 on call support if further escalation was needed. Ensure systems are operational. Print daily, montly, and yearly statements and reports."
     },
   ]
 };
@@ -228,25 +229,25 @@ const bigProjects = {
   subtitle: "SOME PERSONAL AND SCHOOL PROJECTS",
   projects: [
     {
-      image: require("./assets/images/chessScreenshot.png"),
-      projectName: "Chess Game",
-      projectDesc: "Features a networked client-server architecture, with a command-line client, a server to manage users and games, and shared modules for implementing chess rules and game state management.",
+      image: require("./assets/images/EmailPhishingDetector.png"),
+      projectName: "Email Phishing Detector",
+      projectDesc: "A chrome extension built on JavaScript that will scan Gmails and verify if they contain any suspicious links or from suspicioius senders. This will display a bright popup that will show if there are any suspicion on a Gmail. Users can get a detailed analysis and rescan emails for verification.",
       footerLink: [
         {
-          name: "See Github",
-          url: "http://github.com/jakenef/chess"
+          name: "See landing page",
+          url: "https://emailphishingdetector.netlify.app/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "260 Project",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/NoraPallogo.png"),
+      projectName: "BYU 2025 Homecoming Hackathon",
+      projectDesc: "Personalized Agentic AI designed and built for incoming freshman. This AI agent has study mode, research mode, and many more. Can be connected with Canvas to personalize study plans for current semester. Can email professors in real time with help from NoraPal.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://gradient-descent-byu-2025.vercel.app/"
         }
       ]
     }
@@ -264,50 +265,44 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Associate of Science, Utah Valley University",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Completed my Associates degree at Utah Valley University, Dean's list.",
+      image: require("./assets/images/uvuMedallionGreen.webp"),
+      imageAlt: "UVU Logo",
+      footerLink: [
+        {
+          name: "View UVU Dean's list",
+          url: "https://www.uvu.edu/graduation/docs/finalcommencementbooklet2022/commencementbookdigital.pdf"
+        }
+      ]
+    },
+    {
+      title: "Microsoft Foundational C# Certification",
+      subtitle:
+        "Learned new technologies through free certification programs for native C#",
+      image: require("./assets/images/free_code_camp_logo.jpeg"),
+      imageAlt: "Free Code Camp Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://www.freecodecamp.org/certification/kalablessed/foundational-c-sharp-with-microsoft"
         },
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Free Code Camp Account",
+          url: "https://www.freecodecamp.org/kalablessed"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Co-Author of chemistry poster for UN conference",
+      subtitle: "Created a poster for scientific findings on Microplastics level in fresh body or water in Utah lake, Provo river, and Wasatch Snow peak.",
+      image: require("./assets/images/UEN.png"),
+      imageAlt: "UEN Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Microplastics in the Snowpack on the Wasatch Mountains",
+          url: "https://uen.pressbooks.pub/ucur2023/chapter/science-sessionb-posters/"
         }
       ]
     }
@@ -384,8 +379,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+1 385-292-6345",
+  email_address: "tonyphasay45@gmail.com"
 };
 
 // Twitter Section
