@@ -45,9 +45,30 @@
 }
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  transform: translateY(-5px);
+  border-color: $buttonColor;
 }
+
 .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
+  transform: translateY(-5px);
+}
+
+.clickable-card {
+  cursor: pointer;
+  user-select: none;
+
+  .card-title {
+    transition: color 0.2s ease;
+  }
+
+  &:hover .card-title {
+    color: $buttonColor;
+  }
+
+  &:active {
+    transform: translateY(-2px);
+  }
 }
 .project-image {
   position: relative;

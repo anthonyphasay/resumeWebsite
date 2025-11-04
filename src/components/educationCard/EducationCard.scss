@@ -15,10 +15,10 @@
 }
 
 .education-card-border {
-  height: 30px;
+  height: 15px; /* Reduced from 30px for tighter spacing */
   width: 80%;
   border-top: 2px solid $lightBorder1;
-  margin-bottom: 20px;
+  margin-bottom: 5px; /* Reduced from 20px to bring work experience closer */
   -webkit-transition: width 0.6s ease-in-out;
   -moz-transition: width 0.6s ease-in-out;
   -o-transition: width 0.6s ease-in-out;

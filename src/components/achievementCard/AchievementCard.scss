@@ -32,9 +32,30 @@
 }
 .certificate-card:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  transform: translateY(-5px);
+  border-color: $buttonColor;
 }
+
 .dark-mode.certificate-card:hover {
   box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
+  transform: translateY(-5px);
+}
+
+.clickable-achievement {
+  cursor: pointer;
+  user-select: none;
+
+  .card-title {
+    transition: color 0.2s ease;
+  }
+
+  &:hover .card-title {
+    color: $buttonColor;
+  }
+
+  &:active {
+    transform: translateY(-2px);
+  }
 }
 .certificate-image-div {
   position: relative;

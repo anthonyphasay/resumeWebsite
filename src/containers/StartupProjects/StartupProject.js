@@ -34,14 +34,21 @@ export default function StartupProject() {
 
           <div className="projects-container">
             {bigProjects.projects.map((project, i) => {
+              const mainUrl =
+                project.footerLink && project.footerLink.length > 0
+                  ? project.footerLink[0].url
+                  : null;
+
               return (
                 <div
                   key={i}
                   className={
                     isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
+                      ? "dark-mode project-card project-card-dark clickable-card"
+                      : "project-card project-card-light clickable-card"
                   }
+                  onClick={() => openUrlInNewTab(mainUrl)}
+                  style={{cursor: mainUrl ? "pointer" : "default"}}
                 >
                   {project.image ? (
                     <div className="project-image">
@@ -74,7 +81,10 @@ export default function StartupProject() {
                               className={
                                 isDark ? "dark-mode project-tag" : "project-tag"
                               }
-                              onClick={() => openUrlInNewTab(link.url)}
+                              onClick={e => {
+                                e.stopPropagation();
+                                openUrlInNewTab(link.url);
+                              }}
                             >
                               {link.name}
                             </span>

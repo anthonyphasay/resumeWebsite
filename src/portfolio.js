@@ -140,14 +140,24 @@ const educationInfo = {
       logo: require("./assets/images/byuMedallionNavy.png"),
       logoPosition: "center", // Optional: center, top, bottom, left, right, or specific like "center top"
       logoScale: 1.2, // Optional: zoom factor for logo within the FIXED circle (e.g., 0.8 = zoomed out, 1.5 = zoomed in, circle size never changes)
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2023 - April 2028"
+      subHeader: "Bachelor of Science, Computer Science",
+      duration: "September 2023 - April 2028",
+      desc: "Minor in Cybersecurity. Took C++, Java, Python, C programming classes. Participated in Hackathons. Created multiple projects while implementing skills learned in class."
       // desc: "2x Dean's List Recipient (Top 5% of class)",
       // Add something impressive here
       // descBullets: [
       //   "President of BYU Developer's Club",
       //   "Researched ... "
       // ]
+    },
+    {
+      schoolName: "Utah Valley University",
+      logo: require("./assets/images/uvuMedallionGreen.webp"),
+      logoPosition: "Center",
+      logoScale: 1.2,
+      subHeader: "Associates of Science, General Studies",
+      duration: "September 2019 - April 2022",
+      desc: "2x Dean's list recipient. Took courses on Software Engineering, Chemistry, and Biology. Participated in Chemical Research."
     }
     // {
     //   schoolName: "Stanford University",
@@ -278,19 +288,19 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
-    {
-      title: "Associate of Science, Utah Valley University",
-      subtitle:
-        "Completed my Associates degree at Utah Valley University, Dean's list.",
-      image: require("./assets/images/uvuMedallionGreen.webp"),
-      imageAlt: "UVU Logo",
-      footerLink: [
-        {
-          name: "View UVU Dean's list",
-          url: "https://www.uvu.edu/graduation/docs/finalcommencementbooklet2022/commencementbookdigital.pdf"
-        }
-      ]
-    },
+    // {
+    //   title: "Associate of Science, Utah Valley University",
+    //   subtitle:
+    //     "Completed my Associates degree at Utah Valley University, Dean's list.",
+    //   image: require("./assets/images/uvuMedallionGreen.webp"),
+    //   imageAlt: "UVU Logo",
+    //   footerLink: [
+    //     {
+    //       name: "View UVU Dean's list",
+    //       url: "https://www.uvu.edu/graduation/docs/finalcommencementbooklet2022/commencementbookdigital.pdf"
+    //     }
+    //   ]
+    // },
     {
       title: "Microsoft Foundational C# Certification",
       subtitle:
@@ -301,10 +311,6 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://www.freecodecamp.org/certification/kalablessed/foundational-c-sharp-with-microsoft"
-        },
-        {
-          name: "Free Code Camp Account",
-          url: "https://www.freecodecamp.org/kalablessed"
         }
       ]
     },

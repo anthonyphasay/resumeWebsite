@@ -11,8 +11,21 @@ export default function AchievementCard({cardInfo, isDark}) {
     win.focus();
   }
 
+  const mainUrl =
+    cardInfo.footer && cardInfo.footer.length > 0
+      ? cardInfo.footer[0].url
+      : null;
+
   return (
-    <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
+    <div
+      className={
+        isDark
+          ? "dark-mode certificate-card clickable-achievement"
+          : "certificate-card clickable-achievement"
+      }
+      onClick={() => openUrlInNewTab(mainUrl, cardInfo.title)}
+      style={{cursor: mainUrl ? "pointer" : "default"}}
+    >
       <div className="certificate-image-div">
         <img
           src={cardInfo.image}
@@ -36,7 +49,10 @@ export default function AchievementCard({cardInfo, isDark}) {
               className={
                 isDark ? "dark-mode certificate-tag" : "certificate-tag"
               }
-              onClick={() => openUrlInNewTab(v.url, v.name)}
+              onClick={e => {
+                e.stopPropagation();
+                openUrlInNewTab(v.url, v.name);
+              }}
             >
               {v.name}
             </span>
