@@ -16,7 +16,7 @@ export default function ExperienceCard2({cardInfo, isDark}) {
 
   function rgb(values) {
     return typeof values === "undefined" || !values || values.length === 0
-      ? "#f5f5f5"
+      ? "rgba(35, 82, 124, 1)"
       : "rgb(" + values.join(", ") + ")";
   }
 
