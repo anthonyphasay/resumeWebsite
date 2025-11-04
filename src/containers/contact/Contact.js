@@ -62,7 +62,7 @@ export default function Contact() {
               ></img>
             )} */}
             <img
-              src={require("../../assets/images/profile.jpeg")}
+              src={require("../../assets/images/profile2.jpg")}
               alt="Profile"
               className="profile-image"
               style={{
