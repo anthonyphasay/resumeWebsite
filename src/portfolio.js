@@ -206,7 +206,9 @@ const customWorkExperience = {
       descBullets: [
         "Create Powershell automation for server maintenance",
         "Set up developer's environment for QA or Beta testing",
-        "Create/maintain core databases for core FPS products"
+        "Create/maintain core databases for core FPS products",
+        "Participate in Disaster Recovery and backups",
+        "Release Production and Beta code"
       ]
     }
   ]
