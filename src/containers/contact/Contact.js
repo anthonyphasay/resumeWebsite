@@ -61,20 +61,21 @@ export default function Contact() {
                 src={require("../../assets/images/contactMailDark.svg")}
               ></img>
             )} */}
-<img 
+            <img 
   src={require("../../assets/images/profile.jpeg")} 
   alt="Profile"
   className="profile-image" 
-  style={{
-    width: "150px",
-    height: "150px",
+    style={{
+    width: "350px",           // Change this to adjust size
+    height: "350px",          // Change this to adjust size
     border: "0.5rem solid #2779dd",
     borderRadius: "50%",
     boxShadow: "0 30px 30px -30px #0000001a",
     objectFit: "cover",
-    marginLeft: "20px",
-    marginTop: "50px",
-    backgroundColor: "transparent"  // ADD THIS
+    float: "right",          // Floats to the right
+    marginLeft: "10px",
+    marginTop: "10px",
+    marginRight: "100px"
   }}
 />
           </div>
