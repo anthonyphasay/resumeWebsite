@@ -123,13 +123,6 @@
   border-radius: 50%;
   box-shadow: 0 30px 30px -30px #0000001a;
   object-fit: cover;
-  background-color: transparent !important;  // ADD THIS
-  position: relative;  // ADD THIS
-  z-index: 10;  // ADD THIS - ensures it's on top of any background
-}
-
-.contact-image-div {
-  background: transparent !important;  // ADD THIS
 }
 
 @media (max-width: 768px) {

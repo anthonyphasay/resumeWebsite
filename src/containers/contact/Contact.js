@@ -61,7 +61,7 @@ export default function Contact() {
                 src={require("../../assets/images/contactMailDark.svg")}
               ></img>
             )} */}
-            <img 
+            {/* <img 
   src={require("../../assets/images/profile.jpeg")} 
   alt="Profile"
   className="profile-image" 
@@ -76,6 +76,22 @@ export default function Contact() {
     marginLeft: "10px",
     marginTop: "10px",
     marginRight: "100px"
+  }}
+/> */}
+<img 
+  src={require("../../assets/images/profile.jpeg")} 
+  alt="Profile"
+  className="profile-image" 
+  style={{
+    width: "350px",
+    height: "350px",
+    border: "0.5rem solid #2779dd",
+    borderRadius: "50%",
+    boxShadow: "0 30px 30px -30px #0000001a",
+    objectFit: "cover",
+    marginLeft: "20px",
+    marginTop: "50px",
+    backgroundColor: "transparent"  // ADD THIS
   }}
 />
           </div>
