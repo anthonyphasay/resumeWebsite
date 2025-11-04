@@ -53,11 +53,16 @@
 }
 
 /* Media Query */
-@media (max-width: 1380px), (max-width: 768px) {
+@media (max-width: 1380px) {
   .contact-title {
     font-size: 56px;
     font-weight: 400;
-    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-div-main {
+    flex-direction: column;
   }
 
   .contact-title {
@@ -82,13 +87,38 @@
   }
 
   .contact-image-div {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    order: -1; /* Show image first on mobile */
+  }
+
+  .contact-image-div > img {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    max-width: 200px !important;
   }
 }
 
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 32px;
+  }
+
+  .contact-detail,
+  .contact-detail-email {
+    font-size: 18px;
+  }
+
+  .contact-image-div > img {
+    max-width: 150px !important;
+  }
+}
+
+// Profile image styles
 .profile-image {
-  width: 50px;           // Change this number to adjust size
-  height: 50px;          // Change this number to adjust size
+  width: 150px;
+  height: 150px;
   border: 0.5rem solid #2779dd;
   border-radius: 50%;
   box-shadow: 0 30px 30px -30px #0000001a;
@@ -97,10 +127,12 @@
 
 @media (max-width: 768px) {
   .profile-image {
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 200px;     // Mobile size
-    width: 100%;
+    width: 120px;
+    height: 120px;
+    border: 0.4rem solid #2779dd;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0 !important;
+    display: block;
   }
 }
