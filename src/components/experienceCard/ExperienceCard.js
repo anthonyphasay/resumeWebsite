@@ -32,7 +32,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
         ))
       : null;
   };
-// <div style={{background: rgb(colorArrays)}} className="experience-banner">
+  // <div style={{background: rgb(colorArrays)}} className="experience-banner">
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
       <div style={{background: rgb(colorArrays)}} className="experience-banner">

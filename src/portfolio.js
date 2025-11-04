@@ -54,7 +54,9 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly interactive user interfaces for web and mobile applications"
     ),
-    emoji("⚡ Competent in technical operations and production troubleshooting"),
+    emoji(
+      "⚡ Competent in technical operations and production troubleshooting"
+    ),
     emoji(
       "⚡ Experience with CI/CD, Infrastructure as Code, Powershell/Bash scripting"
     )
@@ -69,8 +71,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-cuttlefish"
     },
     {
-    skillName: "C#",
-    fontAwesomeClassname: "fab fa-microsoft"
+      skillName: "C#",
+      fontAwesomeClassname: "fab fa-microsoft"
     },
     {
       skillName: "html-5",
@@ -81,8 +83,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-    skillName: "kubernetes",
-    fontAwesomeClassname: "fas fa-dharmachakra"  // Kubernetes icon
+      skillName: "kubernetes",
+      fontAwesomeClassname: "fas fa-dharmachakra" // Kubernetes icon
     },
     {
       skillName: "JavaScript",
@@ -97,21 +99,21 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-    skillName: "flutter",
-    fontAwesomeClassname: "fab fa-android"  // Try this first
+      skillName: "flutter",
+      fontAwesomeClassname: "fab fa-android" // Try this first
     },
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-    skillName: "powershell",
-    fontAwesomeClassname: "fas fa-terminal"
+      skillName: "powershell",
+      fontAwesomeClassname: "fas fa-terminal"
     },
     {
-    skillName: "linux",
-    fontAwesomeClassname: "fab fa-linux"
-  },
+      skillName: "linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
     // {
     //   skillName: "aws",
     //   fontAwesomeClassname: "fab fa-aws"
@@ -123,7 +125,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -139,14 +141,14 @@ const educationInfo = {
       logoPosition: "center", // Optional: center, top, bottom, left, right, or specific like "center top"
       logoScale: 1.2, // Optional: zoom factor for logo within the FIXED circle (e.g., 0.8 = zoomed out, 1.5 = zoomed in, circle size never changes)
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2023 - April 2028",
+      duration: "September 2023 - April 2028"
       // desc: "2x Dean's List Recipient (Top 5% of class)",
       // Add something impressive here
       // descBullets: [
       //   "President of BYU Developer's Club",
       //   "Researched ... "
       // ]
-    },
+    }
     // {
     //   schoolName: "Stanford University",
     //   logo: require("./assets/images/stanfordLogo.png"),
@@ -182,9 +184,10 @@ const techStack = {
 };
 
 // Work experience section
-const customWorkExperience ={
+const customWorkExperience = {
   display: true,
-  experience: [{
+  experience: [
+    {
       role: "Core DevOps Technician",
       company: "FPS GOLD",
       companylogo: require("./assets/images/fpsgold.jpeg"),
@@ -195,8 +198,9 @@ const customWorkExperience ={
         "Set up developer's environment for QA or Beta testing",
         "Create/maintain core databases for core FPS products"
       ]
-    }]
-}
+    }
+  ]
+};
 
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
@@ -218,7 +222,7 @@ const workExperiences = {
       companylogo: require("./assets/images/dhi.jpeg"),
       date: "Feb 2020 – Jan 2023",
       desc: "Monitor afterhour nightly processing. Troubleshoot client issues during critical processing hours. Contacted Tier 2-3 on call support if further escalation was needed. Ensure systems are operational. Print daily, montly, and yearly statements and reports."
-    },
+    }
   ]
 };
 
@@ -239,7 +243,8 @@ const bigProjects = {
     {
       image: require("./assets/images/EmailPhishingDetector.png"),
       projectName: "Email Phishing Detector",
-      projectDesc: "A chrome extension built on JavaScript that will scan Gmails and verify if they contain any suspicious links or from suspicioius senders. This will display a bright popup that will show if there are any suspicion on a Gmail. Users can get a detailed analysis and rescan emails for verification.",
+      projectDesc:
+        "A chrome extension built on JavaScript that will scan Gmails and verify if they contain any suspicious links or from suspicioius senders. This will display a bright popup that will show if there are any suspicion on a Gmail. Users can get a detailed analysis and rescan emails for verification.",
       footerLink: [
         {
           name: "See landing page",
@@ -251,7 +256,8 @@ const bigProjects = {
     {
       image: require("./assets/images/NoraPallogo.png"),
       projectName: "BYU 2025 Homecoming Hackathon",
-      projectDesc: "Personalized Agentic AI designed and built for incoming freshman. This AI agent has study mode, research mode, and many more. Can be connected with Canvas to personalize study plans for current semester. Can email professors in real time with help from NoraPal.",
+      projectDesc:
+        "Personalized Agentic AI designed and built for incoming freshman. This AI agent has study mode, research mode, and many more. Can be connected with Canvas to personalize study plans for current semester. Can email professors in real time with help from NoraPal.",
       footerLink: [
         {
           name: "Visit Website",
@@ -304,7 +310,8 @@ const achievementSection = {
     },
     {
       title: "Co-Author of chemistry poster for UN conference",
-      subtitle: "Created a poster for scientific findings on Microplastics level in fresh body or water in Utah lake, Provo river, and Wasatch Snow peak.",
+      subtitle:
+        "Created a poster for scientific findings on Microplastics level in fresh body or water in Utah lake, Provo river, and Wasatch Snow peak.",
       image: require("./assets/images/UEN.png"),
       imageAlt: "UEN Logo",
       footerLink: [
