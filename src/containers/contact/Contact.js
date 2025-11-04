@@ -75,7 +75,8 @@ export default function Contact() {
     float: "right",          // Floats to the right
     marginLeft: "10px",
     marginTop: "10px",
-    marginRight: "100px"
+    marginRight: "100px",
+    backgroundColor: "transparent"
   }}
 /> */}
 <img 
@@ -83,15 +84,16 @@ export default function Contact() {
   alt="Profile"
   className="profile-image" 
   style={{
-    width: "350px",
-    height: "350px",
+    width: "150px",
+    height: "150px",
     border: "0.5rem solid #2779dd",
     borderRadius: "50%",
     boxShadow: "0 30px 30px -30px #0000001a",
     objectFit: "cover",
+    objectPosition: "center 20%",  // CHANGE THIS - shifts image up
     marginLeft: "20px",
     marginTop: "50px",
-    backgroundColor: "transparent"  // ADD THIS
+    backgroundColor: "transparent"
   }}
 />
           </div>
