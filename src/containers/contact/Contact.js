@@ -53,14 +53,31 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact-image-div">
-            {illustration.animated ? (
+            {/* {illustration.animated ? (
               <DisplayLottie animationData={email} />
             ) : (
               <img
                 alt="Man working"
                 src={require("../../assets/images/contactMailDark.svg")}
               ></img>
-            )}
+            )} */}
+            <img 
+  src={require("../../assets/images/profile.jpeg")} 
+  alt="Profile"
+  className="profile-image" 
+    style={{
+    width: "350px",           // Change this to adjust size
+    height: "350px",          // Change this to adjust size
+    border: "0.5rem solid #2779dd",
+    borderRadius: "50%",
+    boxShadow: "0 30px 30px -30px #0000001a",
+    objectFit: "cover",
+    float: "right",          // Floats to the right
+    marginLeft: "10px",
+    marginTop: "10px",
+    marginRight: "100px"
+  }}
+/>
           </div>
         </div>
       </div>
