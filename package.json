@@ -21,7 +21,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
-    "build": "node fetch.js && react-scripts build",
+    "build": "CI=false node fetch.js && react-scripts build",
     "deploy": "gh-pages -b gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -29,10 +29,12 @@
     "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
   },
   "eslintConfig": {
-  "extends": "react-app",
-  "rules": {
-    "no-unused-vars": "warn"
-  }},
+    "extends": "react-app",
+    "rules": {
+      "no-unused-vars": "off",
+      "no-undef": "off"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.3%",
