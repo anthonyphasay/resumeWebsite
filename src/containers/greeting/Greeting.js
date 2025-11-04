@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import {Fade} from "react-reveal";
-// import emoji from "react-easy-emoji";
+import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/Software Development.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";

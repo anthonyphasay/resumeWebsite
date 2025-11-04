@@ -5,18 +5,18 @@ import ColorThief from "colorthief";
 // uses colorthief library
 
 export default function ExperienceCard2({cardInfo, isDark}) {
-  // const [colorArrays, setColorArrays] = useState([]);
+  const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
   // this function will get RGB of image, then display it as background
-  // function getColorArrays() {
-  //   const colorThief = new ColorThief();
-  //   // setColorArrays(colorThief.getColor(imgRef.current));
-  // }
+  function getColorArrays() {
+    const colorThief = new ColorThief();
+    // setColorArrays(colorThief.getColor(imgRef.current));
+  }
 
   function rgb(values) {
-    return typeof values === "undefined"
-      ? null
+    return typeof values === "undefined" || !values || values.length === 0
+      ? "#f5f5f5"
       : "rgb(" + values.join(", ") + ")";
   }
 
