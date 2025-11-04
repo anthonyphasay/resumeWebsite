@@ -61,32 +61,22 @@ export default function Contact() {
                 src={require("../../assets/images/contactMailDark.svg")}
               ></img>
             )} */}
-            <div
-              style={{
-                width: "350px",
-                height: "350px",
-                border: "0.5rem solid #2779dd",
-                borderRadius: "50%",
-                overflow: "hidden",
-                boxShadow: "0 30px 30px -30px #0000001a",
-                float: "right",
-                marginLeft: "10px",
-                marginTop: "10px",
-                marginRight: "100px"
-              }}
-            >
-              <img
-                src={require("../../assets/images/profile.jpeg")}
-                alt="Profile"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  display: "block"
-                }}
-              />
-            </div>
+            <img 
+  src={require("../../assets/images/profile.jpeg")} 
+  alt="Profile"
+  className="profile-image" 
+  style={{
+    width: "150px",
+    height: "150px",
+    border: "0.5rem solid #2779dd",
+    borderRadius: "50%",
+    boxShadow: "0 30px 30px -30px rgba(0, 0, 0, 0.1)",
+    objectFit: "cover",
+    marginLeft: "20px",
+    marginTop: "50px",
+    backgroundColor: "white"
+  }}
+/>
 
             {/* <img 
   src={require("../../assets/images/profile.jpeg")} 
