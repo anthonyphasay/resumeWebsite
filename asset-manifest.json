@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/resumeWebsite/static/css/main.f2d07cc0.css",
-    "main.js": "/resumeWebsite/static/js/main.fc6fc655.js",
+    "main.js": "/resumeWebsite/static/js/main.723e8d2c.js",
     "static/css/487.bfac3b0d.chunk.css": "/resumeWebsite/static/css/487.bfac3b0d.chunk.css",
     "static/js/487.7ae187c0.chunk.js": "/resumeWebsite/static/js/487.7ae187c0.chunk.js",
     "static/css/990.24e6fd7f.chunk.css": "/resumeWebsite/static/css/990.24e6fd7f.chunk.css",
@@ -12,15 +12,15 @@
     "static/media/byuMedallionNavy.png": "/resumeWebsite/static/media/byuMedallionNavy.d4fbdbe109bebccdcfc3.png",
     "static/media/resume.pdf": "/resumeWebsite/static/media/resume.667b3320c5580a36a620.pdf",
     "static/media/Agustina.woff": "/resumeWebsite/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/profile2.jpg": "/resumeWebsite/static/media/profile2.7a262388756ede66ab40.jpg",
     "static/media/manOnTable.svg": "/resumeWebsite/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
-    "static/media/profile.jpeg": "/resumeWebsite/static/media/profile.73d997d0e0f919ee6875.jpeg",
     "static/media/developerActivity.svg": "/resumeWebsite/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/uvuMedallionGreen.webp": "/resumeWebsite/static/media/uvuMedallionGreen.33a9b41320bbd612ee72.webp",
     "static/media/skill.svg": "/resumeWebsite/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/resumeWebsite/index.html",
     "static/media/talksCardBack.svg": "/resumeWebsite/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.f2d07cc0.css.map": "/resumeWebsite/static/css/main.f2d07cc0.css.map",
-    "main.fc6fc655.js.map": "/resumeWebsite/static/js/main.fc6fc655.js.map",
+    "main.723e8d2c.js.map": "/resumeWebsite/static/js/main.723e8d2c.js.map",
     "487.bfac3b0d.chunk.css.map": "/resumeWebsite/static/css/487.bfac3b0d.chunk.css.map",
     "487.7ae187c0.chunk.js.map": "/resumeWebsite/static/js/487.7ae187c0.chunk.js.map",
     "990.24e6fd7f.chunk.css.map": "/resumeWebsite/static/css/990.24e6fd7f.chunk.css.map",
@@ -28,6 +28,6 @@
   },
   "entrypoints": [
     "static/css/main.f2d07cc0.css",
-    "static/js/main.fc6fc655.js"
+    "static/js/main.723e8d2c.js"
   ]
 }
