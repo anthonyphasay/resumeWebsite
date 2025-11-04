@@ -61,24 +61,40 @@ export default function Contact() {
                 src={require("../../assets/images/contactMailDark.svg")}
               ></img>
             )} */}
-            <img
-              src={require("../../assets/images/profile.jpeg")}
-              alt="Profile"
-              className="profile-image"
+            <div
               style={{
-                width: "350px", // Change this to adjust size
-                height: "350px", // Change this to adjust size
+                width: "350px",
+                height: "350px",
                 border: "0.5rem solid #2779dd",
                 borderRadius: "50%",
+                overflow: "hidden",
                 boxShadow: "0 30px 30px -30px #0000001a",
-                objectFit: "cover",
-                float: "right", // Floats to the right
+                float: "right",
                 marginLeft: "10px",
                 marginTop: "10px",
-                marginRight: "100px",
-                backgroundColor: "transparent"
+                marginRight: "100px"
               }}
-            />
+            >
+              <img
+                src={require("../../assets/images/profile.jpeg")}
+                alt="Profile"
+                className="profile-image"
+                style={{
+                  width: "350px", // Change this to adjust size
+                  height: "350px", // Change this to adjust size
+                  border: "0.5rem solid #2779dd",
+                  borderRadius: "50%",
+                  boxShadow: "0 30px 30px -30px #0000001a",
+                  objectFit: "cover",
+                  float: "right", // Floats to the right
+                  marginLeft: "10px",
+                  marginTop: "10px",
+                  marginRight: "100px",
+                  backgroundColor: "transparent"
+                }}
+              />
+            </div>
+
             {/* <img 
   src={require("../../assets/images/profile.jpeg")} 
   alt="Profile"
